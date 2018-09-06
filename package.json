@@ -1,0 +1,19 @@
+{
+  "name": "rp-app",
+  "version": "0.0.1",
+  "description": "create react-php app with php live development server - use php at backend and react for frontend",
+  "main": "cli.js",
+  "dependencies": {
+    "colors": "^1.3.2",
+    "commander": "^2.17.1",
+    "fs": "^0.0.1-security",
+    "node-cmd": "^3.0.0",
+    "path": "^0.12.7"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": ["php", "react", "app", "create react-php app", "app creator", "php dev server", "react on php", "rp-app"],
+  "author": "Alireza Kavian",
+  "license": "Apache-2.0"
+}
