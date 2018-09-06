@@ -10,7 +10,7 @@ You can simply test in live php dev server.
 
 This project uses the following technos:
 
- - [rp-app-core](htps://npmjs.com/package/rp-app-core)
+ - [rp-app-core](https://npmjs.com/package/rp-app-core)
     - webpack
     - babel
     - node-php-server
