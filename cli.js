@@ -3,7 +3,6 @@
 const program = require('commander');
 const colors = require('colors');
 const cmd = require('node-cmd');
-const path = require('path');
 
 let make_gray = (txt) => {
     return colors.gray(txt); //display the help text in red on the console
@@ -23,7 +22,7 @@ let reactAppCreator = (dir) => {
         process.stdout.write("-");
     }, 150);
     cmd.get(
-        `mkdir ${dir} && cd ./an && npm install rp-app-core --no-save && cp -rf ./node_modules/rp-app-core/. ./ && rm -rf ./node_modules/rp-app-core`, (err, data, stderr) => {
+        `mkdir ${dir} && cd ./${dir} && npm install rp-app-core --no-save && cp -rf ./node_modules/rp-app-core/. ./ && rm -rf ./node_modules/rp-app-core`, (err, data, stderr) => {
             clearInterval(printer);
             console.log("");
             if (err) {
