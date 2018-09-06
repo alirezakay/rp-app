@@ -108,6 +108,12 @@ Now, your default browser will be opened in this address: **`http://localhost:40
 
 *Note That*: You can see the hirearchy of files (core files) in `rp-app-core` package.
 
+<br />
+
+***Note That***: This server can be auto reloaded just on **one tab**. So please pay attention that there not to be more than one tab opened on the browser.
+
+***Note That***: Each auto refreshing time is something between [6~10]() seconds. So if you want not to be refreshed automatically, just remove the **script** bellow the **`index.php`** file: `<script src="./reloader/reloader.js"></script>`
+
 
 
 ### Author

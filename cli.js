@@ -19,7 +19,7 @@ let reactAppCreator = (dir) => {
     console.log(colors.gray("creating directory \`" + dir + "\` and initializing"));
     console.log(colors.gray("please wait - it might take several minutes"));
     const printer = setInterval(() => {
-        process.stdout.write("-");
+        process.stdout.write(colors.grey("-"));
     }, 150);
     cmd.get(
         `mkdir ${dir} && cd ./${dir} && npm install rp-app-core --no-save && cp -rf ./node_modules/rp-app-core/. ./ && rm -rf ./node_modules/rp-app-core`, (err, data, stderr) => {
@@ -43,9 +43,9 @@ let reactAppCreator = (dir) => {
                     console.log(colors.yellow(stderr));
                 }
                 console.log(data);
-                console.log("\n<><>DONE!<><>\nRun with the commands below");
-                console.log(colors.blue("cd " + dir));
-                console.log(colors.blue("npm start") + " or " + colors.blue("yarn start"));
+                console.log(colors.red("\n<>DONE<>\n")+"To run, type the commands below");
+                console.log(colors.gray("cd " + dir));
+                console.log(colors.gray("npm start") + " or " + colors.blue("yarn start"));
                 console.log("");
             })
         }
