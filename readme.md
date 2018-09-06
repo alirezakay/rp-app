@@ -104,7 +104,7 @@ Now, your default browser will be opened in this address: **`http://localhost:40
 
 *Note That*: You can change configs of the dev server in `scripts` folder.
 
-*Note That*: This rp-app creator just packs for development purposes. For now (V 0.0.1) there is **no** `build` options for **production** mode. You can config it by manipulating *scripts* folder.
+*Note That*: This rp-app creator just packs for development purposes. For now (V 0.0.X) there is **no** `build` options for **production** mode. You can config it by manipulating *scripts* folder.
 
 *Note That*: You can see the hirearchy of files (core files) in `rp-app-core` package.
 
