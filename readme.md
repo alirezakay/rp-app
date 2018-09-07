@@ -1,12 +1,16 @@
 # rp-app
-> create react-php app with php live development server - use php at backend and react for frontend
+> create react-php app with php live dev server - use php at backend, react at frontend
 
-<img src="https://raw.githubusercontent.com/alirezakay/rp-app/master/icon.png" alt="ICON IMG" width="150">
+<p>
+    <img align="left" src="https://raw.githubusercontent.com/alirezakay/rp-app/master/icon-react.png" alt="ICON IMG" width="150">
+    <b>+</b>
+    <img align="right" src="https://raw.githubusercontent.com/alirezakay/rp-app/master/icon-php.png" alt="ICON IMG" width="150">
+</p>
 
 ## Usage
-This package gives you a nice react app development combining with php for back-end.
+This package gives you a nice react app development tool combining with php for the back-end.
 
-You can simply test in live php dev server.
+You can simply test and debug in php live dev server.
 
 This project uses the following technos:
 
@@ -18,40 +22,38 @@ This project uses the following technos:
     - ...
 
 This is just the beginning of the project! 
-So if there is some bugs, just mention it.
-We will try to fix it. 
+So if there was some bugs, just mention it.
+We'll try to fix it. 
 
 <hr />
 
 ***NOTE THAT***
 
-> You can not use inline php codes in react files straightly
+> You can not use inline php codes in react files directly.
 
->> But you can use php in index.php (index file) and use ajax requests.
-
->> Test with live php server
+>> But you can use php in the **index.php** (index file) or use ajax requests.
 
 ### Install
 Install the package by `npm` or `yarn`.
 
-Note that you should have already installed yarn by `npm i -g yarn`.
+Note that you must have already installed *yarn* by: `npm i -g yarn`.
 
 ```
 npm i -g rp-app
 ```
-
+OR
 ```
 yarn global add rp-app
 ```
 
 ### Create And Run
-You can create an app with the command bellow ( \`dir\` is the directory name you wanna be created! ):
+You can create an app with the command bellow ( \`**dir**\` is the directory name, you wanna be created! ) :
 
 ```
 rp-app create <dir>
 ```
 
-Then, run the default app contents on the dev server by:
+Then, run the app on the dev server by:
 
 ```
 cd <dir>
@@ -60,7 +62,10 @@ npm start
 
 ***Congrats***!
 
-Now, your default browser will be opened in this address: **`http://localhost:4000`**
+Now, your default browser is going to be opened at this address: **`http://localhost:4000`**
+
+You can change the default contents by changing the files mentioned at the [hierarchy section](https://github.com/alirezakay/rp-app#hierarchy-of-app)
+
 
 <hr />
 
@@ -120,7 +125,7 @@ Now, your default browser will be opened in this address: **`http://localhost:40
 [Alireza Kavian](https://alireza-kavian.github.io)
 
 ### Licence
-This package is under Apache-2.0 LICENCE
+This package is under **Apache-2.0** LICENCE
 
 
 
