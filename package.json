@@ -1,6 +1,6 @@
 {
     "name": "rp-app",
-    "version": "0.0.4",
+    "version": "0.0.5",
     "description": "create react-php app with php live development server - use php at backend and react for frontend",
     "main": "cli.js",
     "dependencies": {
