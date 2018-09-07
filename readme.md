@@ -3,7 +3,7 @@
 
 <p align="left">
     <img src="https://raw.githubusercontent.com/alirezakay/rp-app/master/icon-react.png" alt="ICON IMG" width="150">
-    <img src="https://raw.githubusercontent.com/alirezakay/rp-app/master/icon-php.png" alt="ICON IMG" width="250">
+    <img src="https://raw.githubusercontent.com/alirezakay/rp-app/master/icon-php.png" alt="ICON IMG" width="300">
 </p>
 
 <br />
@@ -61,7 +61,7 @@ cd <dir>
 npm start
 ```
 
-***Congrats***!
+***Congrats !*** 
 
 Now, your default browser is going to be opened at this address: **`http://localhost:4000`**
 
@@ -72,7 +72,6 @@ You can change the default contents by changing the files mentioned at the [hier
 
 ## Hierarchy Of App
 
-\-
 
 \------ .babelrc
 
