@@ -109,15 +109,15 @@ You can change the default contents by changing the files mentioned at the [hier
 
 *Note That*: You can change configs of the dev server in `scripts` folder.
 
-*Note That*: This rp-app creator just packs for development purposes. For now (V 0.0.X) there is **no** `build` options for **production** mode. You can config it by manipulating *scripts* folder.
+*Note That*: This rp-app creator just packs for development purposes. For now (v 0.0.x) there is **no** `build` options for **production** mode. But you can configure that, by manipulating *scripts* folder.
 
-*Note That*: You can see the hirearchy of files (core files) in `rp-app-core` package.
+*Note That*: You can see the hirearchy of files (core files) in `rp-app-core` package. This package contains core files for this app creator!
 
 <br />
 
 ***Note That***: This server can be auto reloaded just on **one tab**. So please pay attention that there not to be more than one tab opened on the browser.
 
-***Note That***: Each auto refreshing time is something between [6~10]() seconds. So if you want not to be refreshed automatically, just remove the **script** bellow the **`index.php`** file: `<script src="./reloader/reloader.js"></script>`
+***Note That***: Each auto-refreshing time is something between [6 ~ 10](./) seconds. So if you want it not to be refreshed automatically, just remove the **script** beneath the **`index.php`** file: `<script src="./reloader/reloader.js"></script>`
 
 
 
