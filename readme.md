@@ -3,8 +3,7 @@
 
 <p align="left">
     <img src="https://raw.githubusercontent.com/alirezakay/rp-app/master/icon-react.png" alt="ICON IMG" width="150">
-    <b>+</b>
-    <img src="https://raw.githubusercontent.com/alirezakay/rp-app/master/icon-php.png" alt="ICON IMG" width="150">
+    <img src="https://raw.githubusercontent.com/alirezakay/rp-app/master/icon-php.png" alt="ICON IMG" width="250">
 </p>
 
 <br />
