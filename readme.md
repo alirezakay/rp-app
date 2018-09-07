@@ -1,11 +1,13 @@
 # rp-app
 > create react-php app with php live dev server - use php at backend, react at frontend
 
-<p>
-    <img align="left" src="https://raw.githubusercontent.com/alirezakay/rp-app/master/icon-react.png" alt="ICON IMG" width="150">
+<p align="left">
+    <img src="https://raw.githubusercontent.com/alirezakay/rp-app/master/icon-react.png" alt="ICON IMG" width="150">
     <b>+</b>
-    <img align="right" src="https://raw.githubusercontent.com/alirezakay/rp-app/master/icon-php.png" alt="ICON IMG" width="150">
+    <img src="https://raw.githubusercontent.com/alirezakay/rp-app/master/icon-php.png" alt="ICON IMG" width="150">
 </p>
+
+<br />
 
 ## Usage
 This package gives you a nice react app development tool combining with php for the back-end.
