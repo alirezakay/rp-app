@@ -39,7 +39,7 @@ We'll try to fix it.
 
 >> But you can use php in the **index.php** (index file) or use ajax/fetch requests to php files.
 
->> Browser auto opening, **might not** work on some devices. So you, yourself must open the browser and submit the address *localhost:4000*: this is because of an error not handled in package `opn`. (they'll fix it as soon as possible)
+> Browser auto opening, **might not** work on some devices. So you, yourself must open the browser and submit the address *localhost:4000*: this is because of an error not handled in package `opn`. (they'll fix it as soon as possible)
 
 ### Install
 Install the package by `npm` or `yarn`.
