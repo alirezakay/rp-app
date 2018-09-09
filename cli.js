@@ -26,7 +26,7 @@ let reactAppCreator = (dir) => {
     if(process.platform.toLowerCase() !== "win32"){
         superx = "sudo ";
     }
-    const cmnd1 = `mkdir ${dir} && cd ./${dir} && ${superx}npm install rp-app-core --no-save && cp -rf ./node_modules/rp-app-core/. ./ && rm -rf ./node_modules/rp-app-core`;
+    const cmnd1 = `mkdir ${dir} && cd ./${dir} && ${superx}npm install rp-app-core --no-save && cp -rf ./node_modules/rp-app-core/. ./ && sudo rm -rf ./node_modules/rp-app-core`;
     cmd.get(
         cmnd1, (err, data, stderr) => {
             clearInterval(printer);
