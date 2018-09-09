@@ -21,8 +21,14 @@ let reactAppCreator = (dir) => {
     const printer = setInterval(() => {
         process.stdout.write(colors.grey("-"));
     }, 150);
+
+    let superx = "";
+    if(process.platform.toLowerCase() !== "win32"){
+        superx = "sudo ";
+    }
+    const cmnd1 = `mkdir ${dir} && cd ./${dir} && ${superx}npm install rp-app-core --no-save && cp -rf ./node_modules/rp-app-core/. ./ && rm -rf ./node_modules/rp-app-core`;
     cmd.get(
-        `mkdir ${dir} && cd ./${dir} && npm install rp-app-core --no-save && cp -rf ./node_modules/rp-app-core/. ./ && rm -rf ./node_modules/rp-app-core`, (err, data, stderr) => {
+        cmnd1, (err, data, stderr) => {
             clearInterval(printer);
             console.log("");
             if (err) {

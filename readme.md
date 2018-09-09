@@ -8,6 +8,9 @@
 
 <br />
 
+## FIX
+ - At the latest version, some bugs are fixed: (now this package is available for all **windows**/**linux**/**mac**)
+
 ## Usage
 This package gives you a nice react app development tool combining with php for the back-end.
 
