@@ -3,29 +3,50 @@
 const program = require('commander');
 const colors = require('colors');
 const cmd = require('node-cmd');
+const sudo = require('sudo-prompt');
+
 
 let make_gray = (txt) => {
     return colors.gray(txt); //display the help text in red on the console
 }
 
-let runner = (dir) => {
+let runner = (dir, c) => {
     if (!dir._args) {
-        reactAppCreator(dir);
+        reactAppCreator(dir, c);
     }
 }
 
-let reactAppCreator = (dir) => {
-    console.log(colors.green.bold("rp-app-cli is running..\n"));
+
+let reactAppCreator = (dir, c) => {
+    console.log(c.parent.rawArgs[1]);
+    
+    let superx = "";
+    if(process.platform.toLowerCase() !== "win32"){
+        superx = "sudo ";
+        const options = {
+            name: 'RP APP CLI',
+        };
+        sudo.exec('pwd', options,
+            (error, stdout, stderr) => {
+              if (error) throw error;
+              core(superx, dir);
+            }
+        );
+    }
+    else{
+        core(superx, dir);
+    }
+}
+
+let core = (superx, dir) => {
+    console.log(colors.green("\n[rp-app-cli] is running..."));
     console.log(colors.gray("creating directory \`" + dir + "\` and initializing"));
     console.log(colors.gray("please wait\nIt might take several minutes"));
     const printer = setInterval(() => {
         process.stdout.write(colors.grey("-"));
     }, 150);
 
-    let superx = "";
-    if(process.platform.toLowerCase() !== "win32"){
-        superx = "sudo ";
-    }
+
     const cmnd1 = `mkdir ${dir} && cd ./${dir} && ${superx}npm install rp-app-core --no-save && cp -rf ./node_modules/rp-app-core/. ./ && sudo rm -rf ./node_modules/rp-app-core`;
     cmd.get(
         cmnd1, (err, data, stderr) => {
