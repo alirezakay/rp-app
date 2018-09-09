@@ -18,7 +18,7 @@ let runner = (dir, c) => {
 
 
 let reactAppCreator = (dir, c) => {
-    console.log(c.parent.rawArgs[1]);
+    console.log("path of rp-app:", c.parent.rawArgs[1]);
     
     let superx = "";
     if(process.platform.toLowerCase() !== "win32"){
@@ -40,8 +40,8 @@ let reactAppCreator = (dir, c) => {
 
 let core = (superx, dir) => {
     console.log(colors.green("\n[rp-app-cli] is running..."));
-    console.log(colors.gray("creating directory \`" + dir + "\` and initializing"));
-    console.log(colors.gray("please wait\nIt might take several minutes"));
+    console.log(colors.gray("Creating directory \`" + dir + "\` And Initializing"));
+    console.log(colors.gray("Please wait\nIt might take several minutes!"));
     const printer = setInterval(() => {
         process.stdout.write(colors.grey("-"));
     }, 150);
@@ -71,10 +71,23 @@ let core = (superx, dir) => {
                 } else if (stderr) {
                     // console.log(colors.yellow(stderr));
                 }
+const _done = 
+`
+-------------------------------------
+-  ___    ___   _    _  ____   __   -
+- |   \\  |   | | \\   | |      |  |  -
+- |    | |   | |  \\  | |___   |  |  -
+- |    | |   | |   \\ | |      \\  /  -
+- |___/  |___| |_   \\| |____   \\/   -
+-                              ()   -
+-------------------------------------
+`
                 console.log("");
                 console.log(data);
-                console.log(colors.red("\n|DONE|\n\n")+"To run, type the commands below:\n");
+                console.log(colors.grey(_done));
+                console.log(colors.cyan("\n|Successfully created|\n\n")+"To run, type the commands below:\n");
                 console.log(colors.magenta("cd " + dir));
+                console.log("");
                 console.log(colors.magenta(superx+"npm start") + " or " + colors.magenta(superx+"yarn start"));
                 console.log("");
             })
