@@ -1,6 +1,10 @@
 {
     "name": "rp-app",
     "version": "0.0.7",
+    "repository": {
+        "type" : "git",
+        "url" : "https://github.com/alirezakay/rp-app.git"
+    },
     "description": "create react-php app with php live development server - use php at backend and react for frontend",
     "main": "cli.js",
     "dependencies": {
@@ -23,7 +27,11 @@
         "react on php",
         "rp-app"
     ],
-    "author": "Alireza Kavian",
+    "author": {
+        "name": "Alireza Kavian",
+        "email": "kay.alireza@gmail.com",
+        "url": "https://alireza-kavian.github.io"
+    },
     "license": "Apache-2.0",
     "bin": {
         "rp-app": "./cli.js"

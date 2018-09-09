@@ -40,7 +40,7 @@ let reactAppCreator = (dir) => {
             const printer2 = setInterval(() => {
                 process.stdout.write(colors.bold.gray("#"));
             }, 500);
-            cmd.get(`cd ${dir} && npm install`, (err, data, stderr) => {
+            cmd.get(`cd ${dir} && ${superx}npm install`, (err, data, stderr) => {
                 clearInterval(printer2);
                 if (err) {
                     console.log(colors.red(err));
