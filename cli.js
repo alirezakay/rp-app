@@ -47,7 +47,7 @@ let core = (superx, dir) => {
     }, 150);
 
 
-    const cmnd1 = `mkdir ${dir} && cd ./${dir} && ${superx}npm install rp-app-core --no-save && cp -rf ./node_modules/rp-app-core/. ./ && sudo rm -rf ./node_modules/rp-app-core`;
+    const cmnd1 = `mkdir ${dir} && cd ./${dir} && ${superx}npm install rp-app-core --no-save --prefix ./ && cp -rf ./node_modules/rp-app-core/. ./ && sudo rm -rf ./node_modules/rp-app-core`;
     cmd.get(
         cmnd1, (err, data, stderr) => {
             clearInterval(printer);
