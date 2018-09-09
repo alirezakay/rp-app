@@ -15,9 +15,9 @@ let runner = (dir) => {
 }
 
 let reactAppCreator = (dir) => {
-    console.log(colors.magenta.bold("\ncreate-rp-app-cli is running ..."));
+    console.log(colors.green.bold("rp-app-cli is running..\n"));
     console.log(colors.gray("creating directory \`" + dir + "\` and initializing"));
-    console.log(colors.gray("please wait - it might take several minutes"));
+    console.log(colors.gray("please wait\nIt might take several minutes"));
     const printer = setInterval(() => {
         process.stdout.write(colors.grey("-"));
     }, 150);
@@ -35,23 +35,26 @@ let reactAppCreator = (dir) => {
                 console.log(colors.red(err));
                 return;
             } else if (stderr) {
-                console.log(colors.yellow(stderr));
+                // console.log(colors.yellow(stderr));
             }
+            let odd = true;
             const printer2 = setInterval(() => {
-                process.stdout.write(colors.bold.gray("#"));
-            }, 500);
+                process.stdout.write(colors.bold.gray(odd?"<":">"));
+                odd = !odd;
+            }, 700);
             cmd.get(`cd ${dir} && ${superx}npm install`, (err, data, stderr) => {
                 clearInterval(printer2);
                 if (err) {
                     console.log(colors.red(err));
                     return;
                 } else if (stderr) {
-                    console.log(colors.yellow(stderr));
+                    // console.log(colors.yellow(stderr));
                 }
+                console.log("");
                 console.log(data);
-                console.log(colors.red("\n<>DONE<>\n")+"To run, type the commands below");
-                console.log(colors.gray("cd " + dir));
-                console.log(colors.gray("npm start") + " or " + colors.blue("yarn start"));
+                console.log(colors.red("\n|DONE|\n\n")+"To run, type the commands below:\n");
+                console.log(colors.magenta("cd " + dir));
+                console.log(colors.magenta(superx+"npm start") + " or " + colors.magenta(superx+"yarn start"));
                 console.log("");
             })
         }
