@@ -8,8 +8,10 @@
 
 <br />
 
-## FIX
- - At the latest version, some bugs are fixed: (now this package is available for all **windows**/**linux**/**mac**)
+**We are trying to improve this project**
+
+## Fixes
+ - At the @**latest** version, some bugs are fixed: This package is now available for **windows**/**linux**/**mac** platforms.
 
 ## Usage
 This package gives you a nice react app development tool combining with php for the back-end.
@@ -31,11 +33,13 @@ We'll try to fix it.
 
 <hr />
 
-***NOTE THAT***
+### Special Notice
 
 > You can not use inline php codes in react files directly.
 
->> But you can use php in the **index.php** (index file) or use ajax requests.
+>> But you can use php in the **index.php** (index file) or use ajax/fetch requests to php files.
+
+> Browser auto opening, **might not** work on some devices. So you must yourself, open the browser and submit the address ***localhost:4000*** : that is because of an error not handled in the package `opn`. (they'll fix it as soon as possible)
 
 ### Install
 Install the package by `npm` or `yarn`.
