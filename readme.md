@@ -1,5 +1,5 @@
 # rp-app
-> create react-php app with php live dev server - use php at backend, react at frontend
+> This repo/moduel is now archived and will not be updated! please find another alternative :(
 
 <p align="left">
     <img src="https://raw.githubusercontent.com/alirezakay/rp-app/master/icon-react.png" alt="ICON IMG" width="150">
@@ -8,7 +8,6 @@
 
 <br />
 
-**We are trying to improve this project**
 
 ## Fixes
  - At the @**latest** version, some bugs are fixed: This package is now available for **windows**/**linux**/**mac** platforms.
@@ -126,10 +125,6 @@ You can change the default contents by changing the files mentioned at the [hier
 
 ***Note That***: Each auto-refreshing time is something between [6 ~ 10](./) seconds. So if you want it not to be refreshed automatically, just remove the **script** beneath the **`index.php`** file: `<script src="./reloader/reloader.js"></script>`
 
-
-
-### Author
-[Alireza Kavian](https://alireza-kavian.github.io)
 
 ### Licence
 This package is under **Apache-2.0** LICENCE
